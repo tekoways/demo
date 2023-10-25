@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    /* font-size: 20px; */
+    font-family: 'Poppins', sans-serif, 'Kaushan Script', cursive;
+}
+
+body{
+    width: 100%; 
+    background-image: url('./image/broken_noise.png');
+    background-repeat: repeat;
+    background-position: center center;
+    height: auto;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.header-container {
+    /* background-color: cadetblue; */
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60vh;
+    align-items: center;
+}
+header{
+    background-image: url('./image/hero_1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: -1;
+}
+
+
+/* Menu bar */
+.menu-class{
+
+}
+
+.site-name a, .menu-header a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-name h2, .menu-class h2{
+    font-size: 2.5rem;
+}
+.site-name span, .menu-class span{
+    color: red;
+}
+.nav-bar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    margin-top: 20px;
+    position: relative;
+}
+nav ol{
+    list-style-type: none;
+    display: flex;
+    /* justify-content: space-between; */
+}
+nav ol li{
+    padding-left: 20px;
+}
+
+nav ol a{
+    color: #e5e3e3;
+    text-transform: uppercase;
+    text-decoration: none;   
+    font-size: 0.98rem; 
+    font-weight: 500;
+}
+.home{
+    color: white;
+}
+.nav-bar nav::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 28px;
+    width: 30px;
+    height: 1.5px;
+    background-color: red;
+}
+.header-message {
+    margin-top: 10%;
+}
+.header-message h1{
+    text-transform: capitalize;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.header-message span{
+    font-style: italic;
+}
+.header-message p{
+    text-align: center;
+    font-style: oblique;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.header-message p::after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    right: 17%;
+    width: 150px;
+    height: 1.5px;
+    background-color: red;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.menu-class{
+    display: none;
+}
+.menu-bar {
+    width: 50px;
+    height: 40px;
+}
+.menu-bar img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Main section 1 */
+.section1{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.section1-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section1 h2{
+    font-family: 'Kaushan Script';
+    padding-bottom: 20px;
+}
+.section1 span{
+    display: inline-block;
+    padding: 20px 0;
+}
+.section1-img {
+    width: 40%;
+    height: 350px;
+}
+
+.section1-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section1-text{
+    color: white;
+    line-height: 25px;
+    width: 40%;
+}
+.section1-text p{
+    color: #696868;
+}
+.link{
+    background-color: inherit;
+    border: 2px solid red;
+    color: white;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+.link:hover{
+    background-color: red;
+    color: white;
+}
+
+
+/* section 2 */
+.section2{
+    height: 100vh;
+}
+.section2-box{
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.box{
+    width: 23%;
+    color: #696868;
+    padding: 10px;
+    font-size: 1rem;
+}
+.two, .four{
+    position: relative;
+    bottom: -90px;
+    left: 0;
+}
+.box img{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.box p{
+    /* display: inline-block; */
+    padding-bottom: 20px;
+}
+.box .food-name{
+    color: white;
+}
+.food-details{
+    line-height: 30px;
+}
+.food-price{
+    color: yellow;
+}
+
+/* Section 3 */
+.section3{
+    height: 100vh;
+    border: 3px white;
+    /* margin-top: 50px; */
+}
+.section3box-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box-sec{
+    width: 30%;
+    height: auto;
+    border: 1px solid rgb(74, 73, 73);
+}
+.section3-reaction{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+.section3-reaction img{
+    display: inline-block;
+}
+.inner-container-section3{
+    background-image: url('image/broken_noise_@2X.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    padding: 50px 10px 40px 10px ;
+}
+.food-pic img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.inner-container-section3 h3{
+    color: white;
+    padding-bottom: 30px;
+}
+.inner-container-section3 p{
+    color: #696868;
+}
+
+.like-show em, .read-more a{
+    color: white !important;
+    font-style: normal;
+}
+.like-show img, .read-more img{
+    width: 15px;
+}
+.read-more a{
+    color: red !important;
+    text-decoration: none;
+}
+.like-show section{
+    display: inline;
+}
+
+
+/* footer section */
+footer{
+    height: 100vh;
+    color: #696868;
+    font-size: 0.8rem;
+    position: relative;
+}
+.footer-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    line-height: 35px;
+}
+.footer-text ul{
+    list-style-type: none;
+}
+.footer-text h3{
+    color: white;
+}
+.footer-text a{
+    text-decoration: none;
+    color: #696868;
+}
+.tasty, .categories, .links-footer, .contact-information{
+    width: 250px
+}
+.links-footer{
+    margin-left: 30px;
+}
+.tasty{
+    flex-grow: 1;
+}
+
+.footer-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 170px;
+    line-height: 35px;
+    width: 300px;
+    margin: auto;
+}
+.footer-icon{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-image{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.footer-image img{
+    width: 100%;
+}
+.footer-media-text{
+    text-align: center;
+}
+.footer-media-text span{
+    color: red;
+}
+
+.arrow{
+    height: 50px;
+    width: 50px;
+    border: 0.2px ridge #696868;
+    position: absolute;
+    right: 20px;
+}
+.arrow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    body{
+        width: 100%;
+    }
+    /* Header section */
+    .header-container {
+        width: 85%;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .header-message {
+        margin-top: 50%;
+    }
+    .header-message h1{
+        text-transform: capitalize;
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .header-message p::after {
+        bottom: 10%;
+        right: 17%;
+        width: 135px;
+    }
+    .menu-class {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    /* section 1 */
+    .section1 {
+        height: 70vh;
+    }
+    .section1-box {
+        flex-direction: column-reverse;
+    }
+    .section1-img {
+        width: 60%;
+        height: 250px;
+        background-color: aqua;
+        margin-top: 40px;
+    }
+    .section1-text {
+        color: white;
+        line-height: 20px;
+        width: 80%;
+    }
+    .section1 span {
+        display: inline-block;
+        padding: 10px 0;
+    }
+
+    .section1 h2 {
+        padding-bottom: 15px;
+    }
+
+    /* section 2 */
+    .section2-box {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 49%;
+    }
+
+    .two, .four {
+        /* position: relative; */
+        bottom: 0;
+        left: 0;
+    }
+
+    /* Section 3 */
+    .section3box-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .box-sec {
+        width: 45%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+}
